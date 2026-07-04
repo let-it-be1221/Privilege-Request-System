@@ -5,13 +5,13 @@
     var endInput = document.getElementById('end_date');
 
     function showDates() {
-      if (temporaryDates) temporaryDates.hidden = false;
+      if (temporaryDates) temporaryDates.style.display = '';
       if (startInput) startInput.required = true;
       if (endInput) endInput.required = true;
     }
 
     function hideDates() {
-      if (temporaryDates) temporaryDates.hidden = true;
+      if (temporaryDates) temporaryDates.style.display = 'none';
       if (startInput) startInput.required = false;
       if (endInput) endInput.required = false;
       if (startInput) startInput.value = '';
